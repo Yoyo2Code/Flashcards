@@ -3,9 +3,6 @@ require './lib/guess'
 require './lib/deck'
 require './lib/round'
 
-
-
-
 class CardGenerator
 
   def initialize(filename)
@@ -19,15 +16,13 @@ class CardGenerator
         card_array << line.chomp.split(",")
       end
       cards = []
-      card_array.each do |question, answer|
+      card_array.map do |question, answer|
         cards << FlashCard.new(question, answer)
       end
       deck = Deck.new(cards)
       round = Round.new(deck)
-      # puts round.inspect
       round.start
     end
-    # card_file.close
   end
 end
 

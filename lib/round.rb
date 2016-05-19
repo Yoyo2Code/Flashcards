@@ -3,8 +3,8 @@ require 'pry'
 
 class Round
   attr_reader :guesses,
-  :deck,
-  :number_correct
+              :deck,
+              :number_correct
 
   def initialize(deck)
     @deck = deck
@@ -31,11 +31,11 @@ class Round
   def start
     card_count = 0
     puts "Welcome! You're playing with #{deck.cards.count} cards."
-    puts "--------------------------------------------"
+    puts "-----------------------------------------"
     until card_count == deck.cards.count
       puts "This card is #{@guesses.length} out of #{deck.cards.count}."
       puts "Question: #{current_card.question}"
-        record_guess(gets.chomp)
+      record_guess(gets.chomp)
       puts "#{guesses[card_count].feedback}"
       card_count += 1
     end
