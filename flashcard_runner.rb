@@ -4,19 +4,20 @@ require './lib/deck'
 require './lib/round'
 
 class CardGenerator
+  attr_reader :file_name
 
   def initialize(filename)
     @file_name = filename
   end
 
   def cards
-    card_file = File.open("#{@file_name}", "r") do |file|
-      card_array = []
+    File.open("#{file_name}", "r") do |file|
+      make_cards = []
       file.each_line do |line|
-        card_array << line.chomp.split(",")
+        make_cards << line.chomp.split(",")
       end
       cards = []
-      card_array.map do |question, answer|
+      make_cards.map do |question, answer|
         cards << FlashCard.new(question, answer)
       end
       deck = Deck.new(cards)

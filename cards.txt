@@ -1,4 +1,14 @@
 What is 5 + 5?,10
 What is Rachel's favorite animal?,red panda
 What is Mike's middle name?,nobody knows
-What cardboard cutout lives at Turing?,Justin bieber
+What cardboard cutout lives at Turing?,Justin Bieber
+What is the color of the sky?,Blue
+What does the fox say?,ring-ding-ding-da-ding-ding
+What do you call cheese that's not yours?,nacho cheese
+Why do ducks fly in a "V" shape with more ducks on one side than the other?,Because one side has more ducks
+What color is the dress?,Black and blue
+What is the name for JavaScript?,ES6
+Where was Ruby made?,Japan
+When does Turing end?,It never ends.
+Why did the chicken cross the road?,To get to the other side
+If a plan crashes on the border of Canada and America, where do you burry the survivors?,You don't burry survivors!
