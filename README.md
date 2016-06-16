@@ -1,17 +1,39 @@
-# Flashcards
+# **Flashcards**
+---
+Flashcards is studying in a _flash_.
 
-Flashcards Project
-=======
-Week 2 of Turing
------------
+## **Features**
+---
+* Easy to use integration.
+* Runs on any terminal.
+* Keeps track of amount guessed correctly.
+* Smooth interface.
+* Allows you to study your buzz words
+* No need for paper and pencil to study
 
-Fashcards are simply what the name implies, *flashcards*. They can be used to memorize __any__ kind of material or even play a game!
+## **Installation**
 
-Contains:
-  * lib
-  * tests
+---
+To install Flashcards copy `git clone git@github.com:Yoyo2Code/Flashcards.git` into terminal. The program will be installed inside the current directory.
 
-Possible extensions:
+To check the current directory, type `pwd` in terminal.
 
-  1. Accepting card files
-  2. Saving results
+## **Configuration**
+---
+* Change directory to the `flashcards` folder
+
+* Run `bundle install` to install all dependencies
+
+* Run `rake` to run tests
+
+* Inside `cards.txt` is where you would type in your data in [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) format.
+  * Example: `What is the capital of Colorado?,Denver`
+
+
+* Once information in imputed, run `ruby flashcard_runner.rb`
+
+* Now answers questions and have fun!
+
+## **FAQ's**
+---
+For any issues, contact [Maintainer](https://github.com/YoYo2Code)

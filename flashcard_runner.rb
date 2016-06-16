@@ -21,11 +21,12 @@ class CardGenerator
         cards << FlashCard.new(question, answer)
       end
       deck = Deck.new(cards)
-      round = Round.new(deck)
-      round.start
+      starting_round = Round.new(deck)
+      fish.start
     end
   end
 end
 
-filename = "cards.txt"
+filename = ARGV[-1]
+# filename = "cards.txt"
 cards = CardGenerator.new(filename).cards
