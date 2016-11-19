@@ -28,5 +28,5 @@ class CardGenerator
 end
 
 filename = ARGV[-1]
-# filename = "cards.txt"
+
 cards = CardGenerator.new(filename).cards
